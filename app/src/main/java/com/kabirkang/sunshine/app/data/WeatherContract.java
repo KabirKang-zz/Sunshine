@@ -56,7 +56,7 @@ public class WeatherContract {
         public static final String COLUMN_WIND_SPEED = "wind";
         public static final String COLUMN_DEGREES = "degrees";
 
-        public Uri buildWeatherUri(long id) {
+        public static Uri buildWeatherUri(long id) {
             return ContentUris.withAppendedId(CONTENT_URI, id);
         }
 
